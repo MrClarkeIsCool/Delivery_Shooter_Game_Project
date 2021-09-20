@@ -17,9 +17,18 @@ public class winMode : MonoBehaviour
         }
         
     }
+    public void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag=="endZone")
+        {
+            Debug.Log("Left Delivery Zone");
 
 
-    
+        }
+    }
+
+
+
 
 
 }
